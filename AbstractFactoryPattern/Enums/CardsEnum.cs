@@ -1,6 +1,6 @@
-﻿namespace FactoryPattern
+﻿namespace AbstractFactoryPattern.Enums
 {
-    public enum Cards
+    public enum CardsEnum
     {
         MoneyBack,
         Platinum,

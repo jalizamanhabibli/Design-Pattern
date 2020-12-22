@@ -1,14 +1,14 @@
-﻿namespace FactoryPattern.Carts.Impl
+﻿namespace FactoryPattern.Cards.Impl
 {
-    public class PlatinumCreditCard : CreditCard
+    public class TitaniumCreditCard : CreditCard
     {
         private readonly string _cardType;
         private int _creditLimit;
         private int _annualCharge;
 
-        public PlatinumCreditCard(int creditLimit, int annualCharge)
+        public TitaniumCreditCard(int creditLimit, int annualCharge)
         {
-            _cardType = "Platinum";
+            _cardType = "Titanium";
             _creditLimit = creditLimit;
             _annualCharge = annualCharge;
         }
@@ -21,10 +21,12 @@
             set => _creditLimit = value;
         }
 
+
         public override int AnnualCharge
         {
             get => _annualCharge;
             set => _annualCharge = value;
         }
+
     }
 }

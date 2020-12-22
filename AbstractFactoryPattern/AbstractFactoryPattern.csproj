@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EE61BA31-841D-48E8-895D-011AAA805F1E}</ProjectGuid>
+    <ProjectGuid>{5D7DDEE2-3E41-4423-A26F-7E11422F0DAE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FactoryPattern</RootNamespace>
-    <AssemblyName>FactoryPattern</AssemblyName>
+    <RootNamespace>AbstractFactoryPattern</RootNamespace>
+    <AssemblyName>AbstractFactoryPattern</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CardsEnum.cs" />
+    <Compile Include="Creator.cs" />
+    <Compile Include="Enums\BanksEnum.cs" />
+    <Compile Include="Enums\CardsEnum.cs" />
     <Compile Include="Cards\CreditCard.cs" />
     <Compile Include="Cards\Impl\MoneyBackCreditCard .cs" />
     <Compile Include="Cards\Impl\PlatinumCreditCard .cs" />
     <Compile Include="Cards\Impl\TitaniumCreditCard .cs" />
-    <Compile Include="Creator.cs" />
+    <Compile Include="Factories\IBankFactory.cs" />
+    <Compile Include="Factories\Impl\KapitalBankFactory.cs" />
+    <Compile Include="Factories\Impl\NationalBankFactory.cs" />
+    <Compile Include="Factories\Impl\PashaBankFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

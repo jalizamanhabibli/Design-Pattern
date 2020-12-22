@@ -1,4 +1,4 @@
-﻿namespace FactoryPattern.Carts.Impl
+﻿namespace FactoryPattern.Cards.Impl
 {
     public class MoneyBackCreditCard:CreditCard
     {
